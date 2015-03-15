@@ -1,0 +1,102 @@
+$color-purple: #9946a4
+$color-purple-hover: #b94ac4
+$content-width: 1000px
+
+body
+  margin: 0
+  padding: 0
+  font-size: 16px
+  font-family: 'Oswald', sans-serif
+
+
+.container
+  width: $content-width
+  margin: 0 auto
+  overflow: auto
+
+nav
+  padding: 5px
+  text-align: center
+  img
+    display: inline-block
+    vertical-align: middle
+
+  menu
+    display: inline-block
+    vertical-align: middle
+    a
+      color: $color-purple
+      text-decoration: inherit
+      margin-right: 80px
+
+      &:hover
+        color: $color-purple-hover
+
+
+header
+  height: 450px
+  background: url('imgs/porto-background.jpg')
+  background-position: center
+  background-size: 1920px auto
+  color: white
+
+  .wrapper
+    background-color: rgba(84, 24, 104, 0.7)
+    height: 100%
+    width: 100%
+    text-align: center
+    display: table
+    font-weight: lighter
+
+    .container
+      display: table-cell
+      vertical-align: middle
+
+    h1
+      margin: 0
+      font-size: 4em
+      font-weight: bold
+
+    button
+      margin-top: 40px
+
+
+.bt
+  border: none
+  cursor: pointer
+
+.bt-big
+  font-size: 1.4em
+  padding: 0.5em 1em
+
+.bt-white
+  color: white
+  border: solid 1px white
+  background: none
+
+  &:hover
+    background: rgba(255,255, 255, 0.1)
+
+.box
+  text-align: center
+  font-weight: lighter
+  color: #a7abae
+  padding: 80px 0
+
+  &.gray
+    background: #fbfbfb
+
+
+  h1
+    font-size: 2em
+    padding: 0
+    margin: 0
+    margin-bottom: 10px
+    color: $color-purple
+
+footer
+  background: $color-purple
+  height: 300px
+
+  h1
+    color: white !important

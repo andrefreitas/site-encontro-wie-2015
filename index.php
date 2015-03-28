@@ -27,10 +27,22 @@ THE SOFTWARE.
 <head lang="pt">
     <meta charset="UTF-8">
     <title>2º Encontro Nacional da WIE</title>
+
+    <!-- Includes -->
     <link href='//fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="styles.css">
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <!-- RWD -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Social Media -->
+    <meta name="twitter:card" value="2º Encontro Nacional da WIE">
+    <meta property="og:title" content="2º Encontro Nacional da WIE"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="<?php echo "http://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI] ?>imgs/facebook-opengraph.png"/>
+    <meta property="og:description" content="10 e 11 de Abril na Faculdade de Engenharia da Universidade do Porto"/>
+
 </head>
 <body>
 

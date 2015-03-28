@@ -1,22 +1,92 @@
-$color-purple: #9946a4
-$color-purple-hover: #b94ac4
+// The MIT License (MIT)
+//
+// Copyright (c) 2015 André Freitas, Núcleo do IEEE da Universidade do Porto
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+/* Colors */
+$color-purple: #cc2584
+$color-purple-hover: #f02e9c
+$color-orange: #ed7424
+$color-gray:  #fcfcfc
+$color-text: #a7abae
+$color-border: #efefef
+
+/* Dimensions */
 $content-width: 1000px
 
+/* Body */
 body
   margin: 0
   padding: 0
   font-size: 16px
   font-family: 'Oswald', sans-serif
 
-
+/* Container */
 .container
   width: $content-width
   margin: 0 auto
   overflow: auto
 
+/* Box */
+.box
+  text-align: center
+  font-weight: lighter
+  color: $color-text
+  padding: 80px 0
+
+  &:nth-child(even)
+    background: $color-gray
+    background: url('imgs/geometry.png')
+
+  h1
+    font-size: 2em
+    padding: 0
+    margin: 0
+    margin-bottom: 10px
+    color: $color-purple
+
+/* Button */
+.bt
+  border: none
+  cursor: pointer
+
+/* Big Button */
+.bt-big
+  font-size: 1.4em
+  padding: 0.5em 1em
+
+/* White Button */
+.bt-white
+  color: white
+  border: solid 1px white
+  background: none
+
+  &:hover
+    background: rgba(255,255, 255, 0.1)
+
+/* Navigation menu */
 nav
   padding: 5px
   text-align: center
+  border-bottom: solid 5px $color-purple
+
   img
     display: inline-block
     vertical-align: middle
@@ -24,6 +94,7 @@ nav
   menu
     display: inline-block
     vertical-align: middle
+
     a
       color: $color-purple
       text-decoration: inherit
@@ -32,18 +103,17 @@ nav
       &:hover
         color: $color-purple-hover
 
-
+/* Header */
 header
-  height: 450px
   background: url('imgs/porto-background.jpg')
   background-position: center
   background-size: 1920px auto
   color: white
 
   .wrapper
-    background-color: rgba(84, 24, 104, 0.7)
-    height: 100%
+    background-color: rgba(140, 27, 91, 0.7)
     width: 100%
+    padding: 80px 0
     text-align: center
     display: table
     font-weight: lighter
@@ -54,49 +124,96 @@ header
 
     h1
       margin: 0
-      font-size: 4em
+      font-size: 3em
       font-weight: bold
 
     button
       margin-top: 40px
 
+/* Program */
+.program
+  .day
+    margin-top: 20px
+    text-align: center
+    display: inline-block
+    margin-right: 20px
+    vertical-align: top
 
-.bt
-  border: none
-  cursor: pointer
+    .date
+      color: $color-purple
+      font-size: 1.4em
+      text-align: left
+      margin-bottom: 20px
+      padding-left: 20px
 
-.bt-big
-  font-size: 1.4em
-  padding: 0.5em 1em
+    .event
+      width: 300px
+      display: block
+      margin: 0 auto
+      text-align: left
+      padding: 20px
+      border: solid 1px $color-border
+      border-bottom: none
 
-.bt-white
-  color: white
-  border: solid 1px white
-  background: none
+      &:hover
+        background: $color-gray
 
-  &:hover
-    background: rgba(255,255, 255, 0.1)
+      &:last-child
+        border-bottom: solid 1px $color-border
 
-.box
-  text-align: center
-  font-weight: lighter
-  color: #a7abae
-  padding: 80px 0
+      .time
+        color: #d4d4d4
 
-  &.gray
-    background: #fbfbfb
+        font-size: 0.7em
 
+      .title
+        color: $color-purple
+        font-size: 1.4em
 
-  h1
-    font-size: 2em
-    padding: 0
-    margin: 0
-    margin-bottom: 10px
-    color: $color-purple
+      .description
+        font-weight: lighter
+        font-size: 0.9em
 
+/* Localization */
+.localization
+  .map
+    margin-top: 20px
+
+  iframe
+    border: solid 4px #eaeaea
+    width: 90%
+    height: 400px
+
+/* Sponsors */
+.sponsors
+  .sponsor
+    margin-top: 20px
+    display: inline-block
+    margin-right: 20px
+    img
+      height: 80px
+
+/* Footer */
 footer
-  background: $color-purple
-  height: 300px
+  background: $color-purple !important
+  color: $color-gray !important
 
-  h1
-    color: white !important
+  a
+    color: inherit
+
+  .social
+    display: inline-block
+    padding: 20px
+    padding-bottom: 0
+
+    img
+      height: 30px
+      vertical-align: middle
+      display: inline-block
+
+    span
+      margin-left: 5px
+      display: inline-block
+      vertical-align: middle
+
+/* Media Screen */

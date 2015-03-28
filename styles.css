@@ -1,17 +1,57 @@
+/* Colors */
+/* Dimensions */
+/* Body */
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: "Oswald", sans-serif; }
 
+/* Container */
 .container {
   width: 1000px;
   margin: 0 auto;
   overflow: auto; }
 
+/* Box */
+.box {
+  text-align: center;
+  font-weight: lighter;
+  color: #a7abae;
+  padding: 80px 0; }
+  .box:nth-child(even) {
+    background: #fcfcfc;
+    background: url("imgs/geometry.png"); }
+  .box h1 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #cc2584; }
+
+/* Button */
+.bt {
+  border: none;
+  cursor: pointer; }
+
+/* Big Button */
+.bt-big {
+  font-size: 1.4em;
+  padding: 0.5em 1em; }
+
+/* White Button */
+.bt-white {
+  color: white;
+  border: solid 1px white;
+  background: none; }
+  .bt-white:hover {
+    background: rgba(255, 255, 255, 0.1); }
+
+/* Navigation menu */
 nav {
   padding: 5px;
-  text-align: center; }
+  text-align: center;
+  border-bottom: solid 5px #cc2584; }
   nav img {
     display: inline-block;
     vertical-align: middle; }
@@ -19,22 +59,22 @@ nav {
     display: inline-block;
     vertical-align: middle; }
     nav menu a {
-      color: #9946a4;
+      color: #cc2584;
       text-decoration: inherit;
       margin-right: 80px; }
       nav menu a:hover {
-        color: #b94ac4; }
+        color: #f02e9c; }
 
+/* Header */
 header {
-  height: 450px;
   background: url("imgs/porto-background.jpg");
   background-position: center;
   background-size: 1920px auto;
   color: white; }
   header .wrapper {
-    background-color: rgba(84, 24, 104, 0.7);
-    height: 100%;
+    background-color: rgba(140, 27, 91, 0.7);
     width: 100%;
+    padding: 80px 0;
     text-align: center;
     display: table;
     font-weight: lighter; }
@@ -43,42 +83,79 @@ header {
       vertical-align: middle; }
     header .wrapper h1 {
       margin: 0;
-      font-size: 4em;
+      font-size: 3em;
       font-weight: bold; }
     header .wrapper button {
       margin-top: 40px; }
 
-.bt {
-  border: none;
-  cursor: pointer; }
-
-.bt-big {
-  font-size: 1.4em;
-  padding: 0.5em 1em; }
-
-.bt-white {
-  color: white;
-  border: solid 1px white;
-  background: none; }
-  .bt-white:hover {
-    background: rgba(255, 255, 255, 0.1); }
-
-.box {
+/* Program */
+.program .day {
+  margin-top: 20px;
   text-align: center;
-  font-weight: lighter;
-  color: #a7abae;
-  padding: 80px 0; }
-  .box.gray {
-    background: #fbfbfb; }
-  .box h1 {
-    font-size: 2em;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 10px;
-    color: #9946a4; }
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top; }
+  .program .day .date {
+    color: #cc2584;
+    font-size: 1.4em;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 20px; }
+  .program .day .event {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: solid 1px #efefef;
+    border-bottom: none; }
+    .program .day .event:hover {
+      background: #fcfcfc; }
+    .program .day .event:last-child {
+      border-bottom: solid 1px #efefef; }
+    .program .day .event .time {
+      color: #d4d4d4;
+      font-size: 0.7em; }
+    .program .day .event .title {
+      color: #cc2584;
+      font-size: 1.4em; }
+    .program .day .event .description {
+      font-weight: lighter;
+      font-size: 0.9em; }
 
+/* Localization */
+.localization .map {
+  margin-top: 20px; }
+.localization iframe {
+  border: solid 4px #eaeaea;
+  width: 90%;
+  height: 400px; }
+
+/* Sponsors */
+.sponsors .sponsor {
+  margin-top: 20px;
+  display: inline-block;
+  margin-right: 20px; }
+  .sponsors .sponsor img {
+    height: 80px; }
+
+/* Footer */
 footer {
-  background: #9946a4;
-  height: 300px; }
-  footer h1 {
-    color: white !important; }
+  background: #cc2584 !important;
+  color: #fcfcfc !important; }
+  footer a {
+    color: inherit; }
+  footer .social {
+    display: inline-block;
+    padding: 20px;
+    padding-bottom: 0; }
+    footer .social img {
+      height: 30px;
+      vertical-align: middle;
+      display: inline-block; }
+    footer .social span {
+      margin-left: 5px;
+      display: inline-block;
+      vertical-align: middle; }
+
+/* Media Screen */

@@ -7,4 +7,4 @@ O site é desenvolvido com tecnologias básicas web: HTML, SASS e PHP. Para edit
 automaticamente a compilação do SASS para CSS.
 
 #Autores
-- André Freitas - p.andrefreitas@gmail.com
+- André Freitas - hello@andrefreitas.pt
